@@ -2,7 +2,7 @@
     include 'konfiguracja.php';
 
     $haslo = hash("sha256", $_GET["pwd"]);
-    $mysqli = new mysqli($bazaAdres, $bazaLogin, $basaHaslo, $bazaNazwa);
+    $mysqli = new mysqli('artkoc7548.mysql.dhosting.pl', 'guhoc7_knapowsk', 'eelahNg7xei5', 'xu7ahc_knapowsk');
 
     if ($mysqli->connect_error) die("Błąd połączenia");
 
